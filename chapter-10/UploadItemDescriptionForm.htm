@@ -1,0 +1,49 @@
+<html>
+<! ================================================================>
+<!   Program Name: UploadItemDescriptionForm.htm                   >
+<!   Date:         2013-07-25                                      >
+<!   Book:         Oracle Database 12c PL/SQL Programming          >
+<!   Chapter #:    Chapter 10                                      >
+<!   Author Name:  Michael McLaughlin                              >
+<! ---------------------------------------------------------------->
+<!   Contents:                                                     >
+<!   ---------                                                     >
+<!   This script demonstrates an HTML FORM used to upload files    >
+<!   local files to the UploadItemDesc.php server-side program.    >
+<head>
+<title>
+  Chapter 8 : UploadItemDescriptionForm.htm
+</title>
+</head>
+<body>
+<form id="uploadForm"
+      action="UploadItemDescription.php"
+      enctype="multipart/form-data"
+      method="post">
+  <table border=0 cellpadding=0 cellspacing=0>
+    <tr>
+      <td width=125>Item ID</td>
+      <td>
+        <input id="id" name="id" type="text">
+      </td>
+    </tr>
+    <tr>
+      <td width=125>Item Title</td>
+      <td>
+        <input id="title" name="title" type="text">
+      </td>
+    </tr>
+    <tr>
+      <td width=125>Select File</td>
+      <td>
+        <input id="uploadfilename" name="userfile" type="file">
+      </td>
+    </tr>
+    <tr>
+      <td width=125>Click Button to</td>
+      <td><input type="submit" value="Upload File"></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
